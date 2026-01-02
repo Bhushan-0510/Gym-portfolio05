@@ -248,7 +248,9 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="script.js">
+    <script src="script.js"></script>
+    
+    <script>
         gsap.registerPlugin(ScrollTrigger);
 
         // HERO PARALLAX
@@ -278,7 +280,26 @@
             });
         });
 
+        // CLOSE NAVBAR ON NAV-LINK CLICK - Wait for DOM and Bootstrap to be ready
+        setTimeout(function() {
+            const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarCollapse = document.getElementById("nav");
+            
+            navLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+                        // Use Bootstrap collapse with proper timing
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                            toggle: true
+                        });
+                    }
+                });
+            });
+        }, 100);
+
     </script>
+
 </body>
 
 </html>
