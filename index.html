@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AF Gym</title>
+
+    <link rel="shortcut icon" href="logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" height="40">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coaches">Coaches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <a href="https://wa.me/918956422281?text=Hi%20I%20want%20a%20FREE%20trial%20at%20Royal%20Gym"
+                    class="btn btn-warning fw-bold ms-lg-3">
+                    FREE TRIAL
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PARALLAX HERO ================= -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container text-center hero-content">
+            <h1 class="hero-title">TRANSFORM YOUR BODY</h1>
+            <p class="hero-sub">Real coaches. Real results. No excuses.</p>
+
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="https://wa.me/918956422281?text=Hi%20I%20want%20to%20JOIN%20Royal%20Gym"
+                    class="btn btn-warning fw-bold px-4">JOIN NOW</a>
+
+                <a href="https://wa.me/918956422281?text=Hi%20I%20want%20a%20FREE%20trial%20at%20Royal%20Gym"
+                    class="btn btn-outline-light fw-bold px-4">FREE TRIAL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRUST STRIP ================= -->
+    <section class="trust-strip text-white text-center">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="300">0</h2>
+                    <p>Members</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="10">0</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Expert Trainers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROGRAMS ================= -->
+    <section id="programs" class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Training Programs</h2>
+                <p class="text-muted">Built for results, not comfort</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <img src="https://images.unsplash.com/photo-1517964603305-11c0f6f66012" alt="">
+                        <h5>Weight Training</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <img src="https://cdn.shopify.com/s/files/1/0441/1896/6440/files/woman-weight-loss-concept_480x480.webp?v=1734075131"
+                            alt="">
+                        <h5>Fat Loss</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="">
+                        <h5>Personal Training</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RESULTS ================= -->
+    <section id="results" class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Real People Experience</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial justify-content-center text-center align-items-center d-flex flex-column">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" srcset="">
+                        <p>Lost 18kg in 6 months. No bullshit guidance.</p>
+                        <strong>— Rahul</strong>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial justify-content-center align-items-center d-flex flex-column">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQabM5hmGOal_WXKwkIoCgIaP5ow61LCtujyg&s"
+                            alt="" srcset="">
+                        <p>Best gym culture I’ve seen in years.</p>
+                        <strong>— Sneha</strong>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial justify-content-center align-items-center d-flex flex-column">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzm3WIqQdCKRoSRPJsjfAhNLVtUgZ2PmFWXQ&s"
+                            alt="" srcset="">
+                        <p>Finally consistent with workouts.</p>
+                        <strong>— Akash</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PLANS ================= -->
+    <section id="plans" class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Membership Plans</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="plan-card">
+                        <h4>Basic</h4>
+                        <h2>₹999</h2>
+                        <a href="https://wa.me/918956422281?text=Hi%20I%20want%20BASIC%20membership"
+                            class="btn btn-warning">Choose</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="plan-card featured">
+                        <h4>Standard</h4>
+                        <h2>₹1499</h2>
+                        <a href="https://wa.me/918956422281?text=Hi%20I%20want%20STANDARD%20membership"
+                            class="btn btn-dark">Most Popular</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="plan-card">
+                        <h4>Premium</h4>
+                        <h2>₹1999</h2>
+                        <a href="https://wa.me/918956422281?text=Hi%20I%20want%20PREMIUM%20membership"
+                            class="btn btn-warning">Choose</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OLD FOOTER (RESTORED) ================= -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="text-center mb-4">
+                © 2024 All Rights Reserved by AF Gym | Privacy Policy | Terms of Service
+            </p>
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <h5 class="text-warning">Connect with us</h5>
+                        <div class="d-flex align-items-center gap-2 my-2"><img width="24" height="24"
+                                src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png"
+                                alt="whatsapp--v1" /><span>WhatsApp</span></div>
+                        <div class="d-flex align-items-center gap-2 my-2"><img width="24" height="24"
+                                src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png"
+                                alt="instagram-new--v1" /><span>Instagram</span></div>
+                        <div class="d-flex align-items-center gap-2 my-2"><img width="24" height="24"
+                                src="https://img.icons8.com/material-outlined/24/facebook-new.png"
+                                alt="facebook-new" /><span>Facebook</span></div>
+                    </div>
+
+                    <div>
+                        <h5 class="text-warning">About AF Gym</h5>
+                        <p>
+                            AF Gym helps you achieve your fitness goals using modern
+                            equipment, expert trainers, and a motivating environment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.0769435475995!2d77.01785077494335!3d20.71560719846121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd72e1847237cd9%3A0xc3fa0d84c9cc562a!2sRoyal%20Gym!5e1!3m2!1sen!2sin!4v1767193285550!5m2!1sen!2sin"
+                        width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- FLOATING WHATSAPP -->
+    <a class="whatsapp-float" href="https://wa.me/918956422281?text=Hi%20I%20want%20to%20know%20about%20Royal%20Gym" target="_blank">💬</a>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js">
+        gsap.registerPlugin(ScrollTrigger);
+
+        // HERO PARALLAX
+        gsap.to(".hero", {
+            backgroundPosition: "50% 100%",
+            scrollTrigger: {
+                trigger: ".hero",
+                scrub: true
+            }
+        });
+
+        // COUNTERS
+        document.querySelectorAll(".counter").forEach(counter => {
+            let target = +counter.dataset.target;
+            ScrollTrigger.create({
+                trigger: counter,
+                onEnter: () => {
+                    let count = 0;
+                    let inc = target / 80;
+                    let interval = setInterval(() => {
+                        count += inc;
+                        counter.innerText = Math.ceil(count);
+                        if (count >= target) clearInterval(interval);
+                    }, 20);
+                },
+                once: true
+            });
+        });
+
+    </script>
+</body>
+
+</html>

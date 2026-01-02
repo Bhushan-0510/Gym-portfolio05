@@ -1,0 +1,78 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Poppins',sans-serif;  }
+
+/* NAVBAR */
+.navbar { background: rgb(75,50,162); }
+
+/* HERO */
+.hero {
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48') center/cover fixed;
+  position:relative;
+}
+.hero-overlay {
+  position:absolute; inset:0;
+  background:rgba(0,0,0,0.6);
+}
+.hero-content {
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+  color:#fff;
+}
+.hero-title { font-size:6rem; font-weight:700; }
+
+/* TRUST */
+.trust-strip {
+  background: rgb(75,50,162);
+  padding:50px 0;
+}
+.counter { font-size:3rem; font-weight:700; }
+
+/* SECTIONS */
+.section { padding:80px 0; }
+.section-title { font-weight:700; }
+
+/* PROGRAMS */
+.program-card img {
+  width:100%; height:250px; object-fit:cover; border-radius:12px;
+}
+.program-card h5 { margin-top:15px; text-align:center; }
+
+/* TESTIMONIAL */
+.testimonial {
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  height: 400px;
+}
+
+/* PLANS */
+.plan-card {
+  border:1px solid #ddd;
+  padding:40px;
+  border-radius:16px;
+  text-align:center;
+}
+.featured {
+  background:#f0eeee;
+  transform:scale(1.05);
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  font-size:28px;
+  background:#25D366;
+  color:#fff;
+  width:55px;
+  height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  text-decoration:none;
+}
