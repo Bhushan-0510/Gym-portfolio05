@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-4">
-                    <h2 class="counter" data-target="300">500+</h2>
+                    <h2 class="counter" data-target="500">500+</h2>
                     <p>Members</p>
                 </div>
                 <div class="col-md-4">
@@ -269,7 +269,7 @@
                 trigger: counter,
                 onEnter: () => {
                     let count = 0;
-                    let inc = target / 80;
+                    let inc = target / 160;
                     let interval = setInterval(() => {
                         count += inc;
                         counter.innerText = Math.ceil(count);
