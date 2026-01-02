@@ -232,3 +232,8 @@ body { font-family:'Poppins',sans-serif;  }
     height:55px;
   }
 }
+
+.contact {
+  color: inherit;
+  text-decoration: none;
+}
