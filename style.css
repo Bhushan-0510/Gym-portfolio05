@@ -3,6 +3,7 @@ body { font-family:'Poppins',sans-serif;  }
 
 /* NAVBAR */
 .navbar { background: rgb(75,50,162); }
+.navbar-brand img { max-height: 40px; }
 
 /* HERO */
 .hero {
@@ -19,60 +20,199 @@ body { font-family:'Poppins',sans-serif;  }
   top:50%;
   transform:translateY(-50%);
   color:#fff;
+  padding: 20px;
 }
-.hero-title { font-size:6rem; font-weight:700; }
+.hero-title { 
+  font-size:2.5rem; 
+  font-weight:700;
+  margin-bottom: 15px;
+}
+.hero-sub {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* MOBILE: Hero responsive text */
+@media (min-width: 576px) {
+  .hero-title { font-size: 3rem; }
+  .hero-sub { font-size: 1.1rem; }
+}
+
+@media (min-width: 768px) {
+  .hero-title { font-size: 4rem; }
+  .hero-sub { font-size: 1.2rem; }
+}
+
+@media (min-width: 992px) {
+  .hero-title { font-size: 6rem; }
+  .hero-sub { font-size: 1.3rem; }
+}
 
 /* TRUST */
 .trust-strip {
   background: rgb(75,50,162);
-  padding:50px 0;
+  padding:40px 0;
 }
-.counter { font-size:3rem; font-weight:700; }
+.counter { 
+  font-size:2rem; 
+  font-weight:700;
+}
+.trust-strip p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .trust-strip {
+    padding:50px 0;
+  }
+  .counter { font-size:3rem; }
+  .trust-strip p { font-size: 1rem; }
+}
 
 /* SECTIONS */
-.section { padding:80px 0; }
-.section-title { font-weight:700; }
+.section { 
+  padding:40px 0;
+}
+.section-title { 
+  font-weight:700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.section > .container > .text-center > p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .section { padding:80px 0; }
+  .section-title { font-size: 2.5rem; }
+  .section > .container > .text-center > p { font-size: 1rem; }
+}
 
 /* PROGRAMS */
 .program-card img {
-  width:100%; height:250px; object-fit:cover; border-radius:12px;
+  width:100%; 
+  height:200px; 
+  object-fit:cover; 
+  border-radius:12px;
 }
-.program-card h5 { margin-top:15px; text-align:center; }
+.program-card h5 { 
+  margin-top:15px; 
+  text-align:center;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .program-card img {
+    height:250px;
+  }
+  .program-card h5 {
+    font-size: 1.2rem;
+  }
+}
 
 /* TESTIMONIAL */
 .testimonial {
   background:#fff;
-  padding:30px;
+  padding:20px;
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,0.1);
-  height: 400px;
+  height: auto;
+  min-height: 320px;
+}
+.testimonial img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.testimonial p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.testimonial strong {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .testimonial {
+    padding:30px;
+    min-height: 400px;
+  }
+  .testimonial img {
+    width: 100%;
+    height: 300px;
+  }
+  .testimonial p {
+    font-size: 1rem;
+  }
 }
 
 /* PLANS */
 .plan-card {
   border:1px solid #ddd;
-  padding:40px;
+  padding:30px 20px;
   border-radius:16px;
   text-align:center;
 }
+.plan-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.plan-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.plan-card .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
 .featured {
   background:#f0eeee;
-  transform:scale(1.05);
+  transform:scale(1.0);
+}
+
+@media (min-width: 768px) {
+  .plan-card {
+    padding:40px;
+  }
+  .plan-card h4 {
+    font-size: 1.3rem;
+  }
+  .plan-card h2 {
+    font-size: 2rem;
+  }
+  .featured {
+    transform:scale(1.05);
+  }
 }
 
 /* WHATSAPP */
 .whatsapp-float {
   position:fixed;
-  bottom:50px;
-  right:50px;
-  font-size:28px;
+  bottom:20px;
+  right:20px;
+  font-size:24px;
   background:#25D366;
   color:#fff;
-  width:55px;
-  height:55px;
+  width:50px;
+  height:50px;
   display:flex;
   align-items:center;
   justify-content:center;
   border-radius:50%;
   text-decoration:none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-float {
+    bottom:50px;
+    right:50px;
+    font-size:28px;
+    width:55px;
+    height:55px;
+  }
 }
