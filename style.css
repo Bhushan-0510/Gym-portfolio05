@@ -162,6 +162,12 @@ body { font-family:'Poppins',sans-serif;  }
   font-size: 1.1rem;
 }
 
+.program-card :hover {
+  /* transform: scale3d(1.05, 1.05, 1); */
+  transform: translateY(-15px);
+  transition: transform 0.7s;
+}
+
 @media (min-width: 768px) {
   .program-card img {
     height:250px;
@@ -210,6 +216,12 @@ body { font-family:'Poppins',sans-serif;  }
   }
 }
 
+.testimonial:hover {
+   /* transform: scale3d(1.05, 1.05, 1); */
+  transform: translateY(-15px);
+  transition: transform 0.7s;
+}
+
 /* PLANS */
 .plan-card {
   border:1px solid #ddd;
@@ -232,6 +244,12 @@ body { font-family:'Poppins',sans-serif;  }
 .featured {
   background:#f0eeee;
   transform:scale(1.0);
+}
+
+.plan-card:hover {
+   /* transform: scale3d(1.05, 1.05, 1); */
+  transform: translateY(-15px);
+  transition: transform 0.7s;
 }
 
 @media (min-width: 768px) {
