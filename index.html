@@ -60,15 +60,15 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="container text-center hero-content">
-            <h1 class="hero-title">TRANSFORM YOUR BODY</h1>
-            <p class="hero-sub">Real coaches. Real results. No excuses.</p>
+            <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1000">TRANSFORM YOUR BODY</h1>
+            <p class="hero-sub"data-aos="zoom-in" data-aos-duration="3000">Real coaches. Real results. No excuses.</p>
 
             <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
                 <a href="https://wa.me/918956422281?text=Hi%20I%20want%20to%20JOIN%20Royal%20Gym"
-                    class="btn btn-warning fw-bold px-3 px-md-4">JOIN NOW</a>
+                    class="btn btn-warning fw-bold px-3 px-md-4"data-aos="fade-right"data-aos-duration="2000">JOIN NOW</a>
 
                 <a href="https://wa.me/918956422281?text=Hi%20I%20want%20a%20FREE%20trial%20at%20Royal%20Gym"
-                    class="btn btn-outline-light fw-bold px-3 px-md-4">FREE TRIAL</a>
+                    class="btn btn-outline-light fw-bold px-3 px-md-4"data-aos="fade-right"data-aos-duration="1000">FREE TRIAL</a>
             </div>
         </div>
     </section>
@@ -255,11 +255,13 @@
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="script.js">
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
     
     <script>
+
+        // AOS INIT
+        AOS.init();
+
         gsap.registerPlugin(ScrollTrigger);
 
         // HERO PARALLAX
